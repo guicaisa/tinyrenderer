@@ -44,7 +44,11 @@ struct PhongShader : IShader {
     }
 };
 
+void chapter1Func();
+
 int main(int argc, char** argv) {
+    chapter1Func();
+
     if (argc < 2) {
         std::cerr << "Usage: " << argv[0] << " obj/model.obj" << std::endl;
         return 1;
