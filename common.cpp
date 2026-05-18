@@ -92,3 +92,8 @@ std::tuple<int, int> project(float x, float y, float z, int width, int height)
         (y + 1.) * height / 2,
     };
 }
+
+double signed_triangle_area(int ax, int ay, int bx, int by, int cx, int cy)
+{
+    return 0.5 * ((by-ay)*(bx+ax) + (cy-by)*(cx+bx) + (ay-cy)*(ax+cx));
+}

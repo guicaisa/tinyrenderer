@@ -15,3 +15,5 @@ void drawLine(int ax, int ay, int bx, int by, TGAImage& framebuffer, TGAColor co
 void drawLineRecordRowRange(int ax, int ay, int bx, int by, TGAImage& framebuffer, TGAColor color, unordered_map<int, pair<int, int>>& row_range);
 
 std::tuple<int, int> project(float x, float y, float z, int width, int height);
+
+double signed_triangle_area(int ax, int ay, int bx, int by, int cx, int cy);

@@ -46,10 +46,12 @@ struct PhongShader : IShader {
 
 void chapter1Func();
 void chapter2Func();
+void chapter3Func();
 
 int main(int argc, char** argv) {
     //chapter1Func();
-    chapter2Func();
+    //chapter2Func();
+    chapter3Func();
     return 0;
     
     if (argc < 2) {

@@ -192,10 +192,10 @@ void triangleBoundingBox(int ax, int ay, int bx, int by, int cx, int cy, TGAImag
     }
 }
 
-double signed_triangle_area(int ax, int ay, int bx, int by, int cx, int cy)
-{
-    return 0.5 * ((by-ay)*(bx+ax) + (cy-by)*(cx+bx) + (ay-cy)*(ax+cx));
-}
+// double signed_triangle_area(int ax, int ay, int bx, int by, int cx, int cy)
+// {
+//     return 0.5 * ((by-ay)*(bx+ax) + (cy-by)*(cx+bx) + (ay-cy)*(ax+cx));
+// }
 
 // 在triangleBoundingBox的基础上，仍然绘制出一个矩形，但是对矩形中的每个元素进行判断其是否处于三角形的内部，如果存在才绘制，否则不绘制，从而绘制出一个实际的三角形
 void triangleBoundingBoxFilter(int ax, int ay, int bx, int by, int cx, int cy, TGAImage& framebuffer, TGAColor color)
