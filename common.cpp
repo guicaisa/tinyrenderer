@@ -93,6 +93,15 @@ std::tuple<int, int> project(float x, float y, float z, int width, int height)
     };
 }
 
+std::tuple<int, int, int> projectGray(vec4 v, int width, int height)
+{
+    return {
+        (v.x + 1.) * width / 2,  
+        (v.y + 1.) * height / 2,
+        (v.z + 1.) * 255 / 2,
+    };
+}
+
 double signed_triangle_area(int ax, int ay, int bx, int by, int cx, int cy)
 {
     return 0.5 * ((by-ay)*(bx+ax) + (cy-by)*(cx+bx) + (ay-cy)*(ax+cx));
