@@ -20,3 +20,5 @@ std::tuple<int, int> project(float x, float y, float z, int width, int height);
 std::tuple<int, int, int> projectGray(vec4 v, int width, int height);
 
 double signed_triangle_area(int ax, int ay, int bx, int by, int cx, int cy);
+
+void triangleWithZbuffer(int ax, int ay, int az, int bx, int by, int bz, int cx, int cy, int cz, TGAImage& zbuffer, TGAImage& framebuffer, TGAColor color);
