@@ -52,6 +52,7 @@ void chapter5Func();
 void chapter6Func();
 void chapter7Func();
 void chapter8Func();
+void chapter9Func();
 
 int main(int argc, char** argv) {
     //chapter1Func();
@@ -61,7 +62,8 @@ int main(int argc, char** argv) {
     //chapter5Func();
     //chapter6Func();
     //chapter7Func();
-    chapter8Func();
+    //chapter8Func();
+    chapter9Func();
     return 0;
     
     if (argc < 2) {
